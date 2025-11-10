@@ -99,3 +99,12 @@ document.querySelectorAll('nav a').forEach(a => {
     if (e.key === 'Enter') a.click();
   });
 });
+
+// ===== MOBILE NAV TOGGLE =====
+const menuToggle = document.getElementById("menu-toggle");
+const nav = document.getElementById("navbar");
+
+menuToggle.addEventListener("click", () => {
+  nav.classList.toggle("active");
+});
+
